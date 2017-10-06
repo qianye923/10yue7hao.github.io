@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    2D：就是一个平面，就是只有x轴和y轴
+
+    3D：就是一个立体，除了x和y轴以外，还多一个z轴，z轴可以理解为屏幕前后
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+
+            width: 700px;
+            height: 800px;
+
+            margin: 100px auto;
+        }
+
+        li {
+
+            float: left;
+            margin-left: 30px;
+
+            width: 200px;
+            height: 200px;
+            background: yellowgreen;
+
+            transition: all 1s;
+        }
+
+        li:first-child:hover {
+
+            transform: rotateX(45deg);
+        }
+
+        li:nth-child(2):hover {
+
+            transform: rotateY(45deg);
+        }
+
+        li:last-child:hover {
+
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li>以x轴旋转</li>
+        <li>以y轴旋转</li>
+        <li>以z轴旋转</li>
+    </ul>
+
+</body>
+
+</html>
